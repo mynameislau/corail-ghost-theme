@@ -1,0 +1,14 @@
+{{#foreach posts}}
+<article>
+	<header>
+		<h1><a href="{{url}}">{{{title}}}</a></h1>
+		<time datetime="{{date format='YYYY-MM-DD'}}" pubdate>{{date format="DD MMMM YYYY"}}</time>
+	</header>
+	<p>
+		{{excerpt words="50"}}&nbsp;<small>[…]</small>
+	</p>
+	<footer>
+		<a class="more" href="{{url}}">Lire la suite {{> "arrow-right"}}</a>
+	</footer>
+</article>
+{{/foreach}}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr" class={{body_class}}>
+	<head>
+		<meta charset="UTF-8">
+		<title>{{@blog.title}}</title>
+		<link rel="stylesheet" type="text/css" href="{{asset "css/main.css"}}" />
+		<link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+		{{ghost_head}}
+	</head>
+	<body>
+		<nav><a href="{{@blog.url}}">{{> "arrow"}}retour</a></nav>
+		<header>
+			<h1>{{@blog.title}}</h1>
+		</header>
+		<main>
+			{{{body}}}
+		</main>
+		{{ghost_foot}}
+		<footer>
+			<a class="logo" href="http://corail-webdesign.fr"><img src="http://corail-webdesign.fr/assets/logo.svg" alt=""/></a>
+			{{!-- <section>
+				<a href="http://twitter.com/laurentfalda">Twitter</a>
+				<a href="http://github.com/mynameislau">Github</a>
+			</section> --}}
+			<span class="powered">
+				Tourne sur <a href="http://ghost.org">Ghost</a>
+			<span>
+		</footer>
+	</body>
+</html>
