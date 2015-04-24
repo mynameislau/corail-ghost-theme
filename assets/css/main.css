@@ -93,6 +93,10 @@ h1, h2, h3, h4, h5, h6,
 nav, .more, .share {
   font-family: 'Arvo', Cambria, Georgia, Times, Times New Roman, serif;
 }
+code
+{
+  font-size: 14px;
+}
 time {
   font-family: Helvetica, sans-serif;
   color: grey;
@@ -222,6 +226,7 @@ article footer a:hover {
   margin-left: .5em;
 }
 body>footer {
+  margin-top: 8em;
   padding: 2em;
   /*text-align: right;*/
   font-weight: lighter;

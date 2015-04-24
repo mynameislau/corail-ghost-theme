@@ -1,6 +1,6 @@
 {{!< default}}
 {{#post}}
-	<section class="post-content">
+	<section class="post-content language-javascript">
 		<h1>{{title}}</h1>
 		<p>{{content}}</p>
 		<footer>
@@ -9,4 +9,5 @@
 		</footer>
 		{{!> "disqus"}}
 	</section>
+	<script src="{{asset "js/prism.js"}}"></script>
 {{/post}}
