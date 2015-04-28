@@ -3,10 +3,12 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>{{@blog.title}}</title>
-		<link rel="stylesheet" type="text/css" href="{{asset "css/main.css"}}" />
-		<link rel="stylesheet" type="text/css" href="{{asset "css/prism.css"}}" />
-		<link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="{{asset "css/main.css"}}"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<script>
+			{{> "async-css-load"}}
+			loadCSS("http://fonts.googleapis.com/css?family=Arvo");
+		</script>
 		{{ghost_head}}
 	</head>
 	<body>
