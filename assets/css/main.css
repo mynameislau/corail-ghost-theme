@@ -154,16 +154,21 @@ main, body>header {
 }
 /**/
 
-body>nav {
+.blog-nav {
   padding: .5em;
 }
 @media (min-width: 30em) {
-  body>nav {
+  .blog-nav {
     padding: 1em 1.5em;
   }
 }
-.home-template>body>nav {
+.home-template>.blog-nav {
   display: none;
+}
+.blog-name
+{
+  margin-top: 1em;
+  margin-bottom: 2em;
 }
 nav a, h1 a {
   color: inherit;
@@ -174,16 +179,8 @@ h1, h2, h3, h4, h5, h6 {
   fill: hsl(0, 0%, 30%);
   margin-bottom: .5em;
 }
-body>header>h1
-{
-  margin: 1em 0 2em 0;
-}
 h1 a {
   border-bottom: none;
-}
-time {
-  font-weight: lighter;
-  font-size: .7em;
 }
 a, h1 a:hover {
   color: #FF6363;
@@ -203,6 +200,10 @@ a svg {
   fill: inherit;
   top: -0.06em;
   position: relative;
+}
+time {
+  font-weight: lighter;
+  font-size: .7em;
 }
 article {
   margin: 2em 0;
@@ -231,6 +232,12 @@ article footer a {
   font-family: inherit;
   font-size: .9em;
 }
+.post-content a {
+  border-bottom: none;
+}
+.post-content a:hover {
+  border-bottom: 1px solid #FF6363;
+}
 .share {
   font-size: smaller;
   float: right;
@@ -243,7 +250,7 @@ article footer a {
   height: 2em;
   margin-left: .5em;
 }
-body>footer {
+.blog-footer {
   margin-top: 8em;
   padding: 2em;
   /*text-align: right;*/
@@ -252,7 +259,8 @@ body>footer {
   /*color: white;*/
   background: hsl(36, 12%,94%);
 }
-body>footer
+/** flex **/
+.blog-footer
 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -276,7 +284,7 @@ body>footer
 .powered a {
   border-bottom: none;
 }
-.logo img{ width: 3em; vertical-align: middle; }
+.logo img{ width: 3em; vertical-align: middle; margin-right: 2em; }
 
 
 /********************************************
