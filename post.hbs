@@ -1,10 +1,10 @@
 {{!< default}}
 {{#post}}
-	<section class="post-content">
-		<h1>{{title}}</h1>
-		<p>{{content}}</p>
+	<section class="blog-post">
+		<h2 class="post-title">{{title}}</h2>
+		{{content}}
 		<footer>
-			<span class="author">{{#author}}{{name}}{{/author}},&nbsp;<time datetime="{{date format='YYYY-MM-DD'}}" pubdate>{{date format="DD MMMM YYYY"}}</time></span>
+			<span class="author">{{#author}}{{name}}{{/author}},&nbsp;<time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time></span>
 			{{!-- <span class="share">Partager :&nbsp;<a href="http://twitter.com/share?text={{title}}&url={{url absolute="true"}}">{{> "twitter"}}</a>&nbsp;<a href="">{{> "facebook"}}</a></span> --}}
 		</footer>
 		{{!> "disqus"}}

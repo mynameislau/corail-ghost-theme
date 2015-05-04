@@ -145,53 +145,20 @@ main, body>header {
   h1,h2,h3 { font-size: 1em; }
 }
 @media (min-width: 30em) {
-  :not(.home-template) .blog-name {
+  .post-template .blog-name {
     font-size: 1.5em;
   }
-  .post-content>h1 {
+  .post-title {
     font-size: 2em;
   }
 }
 /**/
 
-.blog-nav {
-  padding: .5em;
-}
-@media (min-width: 30em) {
-  .blog-nav {
-    padding: 1em 1.5em;
-  }
-}
-.home-template .blog-nav {
-  display: none;
-}
-.blog-name
-{
-  margin-top: 1em;
-  margin-bottom: 2em;
-}
-nav a, h1 a {
-  color: inherit;
-  fill: inherit;
-}
-h1, h2, h3, h4, h5, h6 {
-  color: hsl(0, 0%, 30%);
-  fill: hsl(0, 0%, 30%);
-  margin-bottom: .5em;
-}
-h1 a {
-  border-bottom: none;
-}
-a, h1 a:hover {
+a, a:hover {
   color: #FF6363;
   fill: #FF6363;
-}
-a, a:hover {
   text-decoration: none;
   border-bottom: 1px solid #FF6363;
-}
-h1 a:hover {
-  border-bottom: none;
 }
 a svg {
   vertical-align: middle;
@@ -205,37 +172,67 @@ time {
   font-weight: lighter;
   font-size: .7em;
 }
-article {
+h1, h2, h3, h4, h5, h6 {
+  color: hsl(0, 0%, 30%);
+  fill: hsl(0, 0%, 30%);
+  margin-bottom: .5em;
+}
+nav a {
+  color: inherit;
+  fill: inherit;
+}
+.blog-nav { padding: .5em; }
+@media (min-width: 30em) {
+  .blog-nav { padding: 1em 1.5em; }
+}
+.home-template .blog-nav {
+  display: none;
+}
+.blog-name
+{
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+.post-excerpt {
   margin: 2em 0;
 }
-article footer {
+.post-excerpt-title a {
+  color: inherit;
+  border-bottom: none;
+}
+.post-excerpt-title a:hover {
+  color: #FF6363;
+}
+.post-excerpt footer {
   text-align: right;
   font-size: .8em;
 }
-article footer a {
+.post-excerpt footer a {
   border-bottom: none;
 }
-.post-content img {
+.post-excerpt footer a:hover {
+  border-bottom: 1px solid #FF6363;
+}
+.blog-post img {
   max-width: 100%;
 }
-.post-content hr {
+.blog-post hr {
   margin: 2em 2em;
   background: #FF6363;
   height: 1px;
   border: none;
 }
-
-.post-content footer {
+.blog-post footer {
   margin: 3em 0 6em 0;
 }
-.post-content time {
+.blog-post time {
   font-family: inherit;
   font-size: .9em;
 }
-.post-content a {
+.blog-post a {
   border-bottom: none;
 }
-.post-content a:hover {
+.blog-post a:hover {
   border-bottom: 1px solid #FF6363;
 }
 .share {
